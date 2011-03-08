@@ -1,0 +1,3 @@
+- Custom post type for switchers
+- Print stylesheet
+- Add commenting to FAQs and Step single pages
