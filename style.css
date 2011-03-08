@@ -72,6 +72,11 @@ hr.small {
 	margin-bottom: 10px;
 }
 
+.entry {
+	font-size: 14px;
+	line-height: 20px;
+}
+
 /*
 .cyan {
 	color: #0066CC;

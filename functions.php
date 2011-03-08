@@ -6,6 +6,7 @@
 
 define( 'MOVETOWORDPRESS_VERSION', '0.0' );
 
+include( 'php/m2wp_steps.php' );
 include( 'php/m2wp_faqs.php' );
 
 if ( !class_exists( 'movetowordpress' ) ) {
@@ -23,6 +24,7 @@ class movetowordpress
 		add_theme_support( 'post-formats' );
 		add_theme_support( 'post-thumbnails' );
 		
+		$this->steps = new m2wp_steps();
 		$this->faqs = new m2wp_faqs();
 		
 	} // END __construct()
