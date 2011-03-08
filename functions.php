@@ -6,6 +6,8 @@
 
 define( 'MOVETOWORDPRESS_VERSION', '0.0' );
 
+include( 'php/m2wp_faqs.php' );
+
 if ( !class_exists( 'movetowordpress' ) ) {
 	
 class movetowordpress
@@ -17,6 +19,11 @@ class movetowordpress
 	function __construct() {
 		
 		add_action( 'init', array( &$this, 'enqueue_styles' ) );
+		
+		add_theme_support( 'post-formats' );
+		add_theme_support( 'post-thumbnails' );
+		
+		$this->faqs = new m2wp_faqs();
 		
 	} // END __construct()
 	
@@ -35,7 +42,8 @@ class movetowordpress
 	
 } // END if ( !class_exists( 'movetowordpress' ) )
 
-$movetowordpress = new movetowordpress();
+global $m2wp;
+$m2wp = new movetowordpress();
 
 
 

@@ -2,7 +2,7 @@
 
 	<div class="wrap">
 
-		<p class="copy">&copy; <?php echo date('Y'); ?> <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></p>
+		<div class="courtesy-of">&copy; <?php echo date('Y'); ?> <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></div>
 	
 	</div><!-- END .wrap -->
 

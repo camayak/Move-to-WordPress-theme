@@ -53,9 +53,35 @@
 			<div class="message info">There's no page with slug of 'why-wordpress' at the moment</div>
 			
 		<?php endif; ?>
+		
+		<h2>What you'll need to do to move to WordPress</h2>
+		
+		<h2>Frequently Asked Questions</h2>
 			
+		<?php
+			// Load the text content for the "Frequently Asked Questions"
+			$args = array(
+				'post_type' => 'm2wp_faq',
+				'posts_per_page' => -1,
+			);
+			$faqs = new WP_Query( $args );
+		?>
 		
+		<?php if ( $faqs->have_posts() ) : ?>
 		
+		<?php while ( $faqs->have_posts() ) : $faqs->the_post(); ?>
+			
+			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			
+			<div class="entry">
+				<?php the_content(); ?>
+			</div>
+		
+		<?php endwhile; else: ?>
+			
+			<div class="message info">There's no posts in the custom post type 'm2wp_faq'</div>
+			
+		<?php endif; ?>
 		
 	</div>
 	

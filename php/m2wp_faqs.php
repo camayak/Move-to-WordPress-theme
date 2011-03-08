@@ -2,7 +2,7 @@
 /**
  * class faq
  */
-if ( class_exists( 'm2wp_faqs' ) ) {
+if ( !class_exists( 'm2wp_faqs' ) ) {
 	
 class m2wp_faqs {
 	
@@ -36,7 +36,7 @@ class m2wp_faqs {
 						'not_found_in_trash' => 'No FAQs found in Trash',
 						'parent' => 'Parent FAQ'
 				),
-				'menu_position' => 10,
+				'menu_position' => 7,
 				'public' => true,
 				'rewrite' => array(
 					'slug' => 'faqs'

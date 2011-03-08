@@ -28,6 +28,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+h1, h2 {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
 h1 {
 	font-size: 48px;
 }
@@ -92,12 +97,11 @@ hr.small {
 	padding-bottom: 20px;
 	margin-bottom: 15px;
 	text-align: center;
-	background-color: #EEEEEE;	
+	background-color: #EEEEEE;
 }
 
 .header h1.site-title {
-	font-weight: normal;
-	text-transform: uppercase;
+	
 }
 
 .header div.site-description {
@@ -132,6 +136,12 @@ hr.small {
 
 .content h3, .content h4 {
 	font-weight: normal;
+}
+
+.footer {
+	background-color: #EEEEEE;
+	margin-top: 15px;
+	margin-bottom: 0px;
 }
 
 .footer p.copy {
