@@ -1,4 +1,8 @@
 <?php
+/**
+ * @todo Register 'step' custom post type
+ * @todo Register 'faq' custom post type
+ */
 
 define( 'MOVETOWORDPRESS_VERSION', '0.0' );
 
