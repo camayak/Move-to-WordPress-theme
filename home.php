@@ -38,11 +38,11 @@
 			$why_wordpress = new WP_Query( $args );
 		?>
 		
+		<h2>Why you should seriously consider WordPress</h2>		
+		
 		<?php if ( $why_wordpress->have_posts() ) : ?>
 		
 		<?php while ( $why_wordpress->have_posts() ) : $why_wordpress->the_post(); ?>
-			
-			<h2><?php the_title(); ?></h2>
 			
 			<div class="entry">
 				<?php the_content(); ?>
@@ -55,8 +55,6 @@
 		<?php endif; ?>
 		
 		<h2>What you'll need to do to move to WordPress</h2>
-		
-		<h2>Frequently Asked Questions</h2>
 			
 		<?php
 			// Load the text content for the "Frequently Asked Questions"
@@ -67,6 +65,8 @@
 			$faqs = new WP_Query( $args );
 		?>
 		
+		<h2>Frequently Asked Questions (<?php echo count($faqs); ?>)</h2>		
+		
 		<?php if ( $faqs->have_posts() ) : ?>
 		
 		<?php while ( $faqs->have_posts() ) : $faqs->the_post(); ?>
@@ -74,7 +74,7 @@
 			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			
 			<div class="entry">
-				<?php the_content(); ?>
+				<?php the_excerpt(); ?>
 			</div>
 		
 		<?php endwhile; else: ?>
