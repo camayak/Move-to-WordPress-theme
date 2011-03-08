@@ -20,21 +20,45 @@ a {
 	color: #0066CC;
 }
 
+a:hover {
+	color: #0066CC;
+}
+
 a img {
 	border: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-
+	font-weight: normal;
 }
 
 h1, h2 {
-	font-weight: normal;
 	text-transform: uppercase;
+	letter-spacing: -1px;
 }
 
 h1 {
 	font-size: 48px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 26px;
+	color: #999999;	
+}
+
+h4 {
+	font-size: 18px;
+	color: #999999;	
+}
+
+h3 a, h4 a {
+	color: #999999;
 }
 
 hr {
@@ -74,7 +98,7 @@ hr.small {
 
 .entry {
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 22px;
 }
 
 /*
@@ -128,20 +152,6 @@ hr.small {
 	border-radius: 10px;
 }
 */
-
-.content {
-	font-size: 14px;
-	line-height: 22px;
-}
-
-.content h3 {
-	font-size: 22px;
-	margin-bottom: 5px;
-}
-
-.content h3, .content h4 {
-	font-weight: normal;
-}
 
 .footer {
 	background-color: #EEEEEE;
