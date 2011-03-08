@@ -31,7 +31,7 @@ class movetowordpress
 	
 } // END if ( !class_exists( 'movetowordpress' ) )
 
-$towknightcenter = new towknightcenter();
+$movetowordpress = new movetowordpress();
 
 
 
