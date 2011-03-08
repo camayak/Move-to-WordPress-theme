@@ -6,6 +6,7 @@
 
 define( 'MOVETOWORDPRESS_VERSION', '0.0' );
 
+include( 'php/m2wp_switchers.php' );
 include( 'php/m2wp_steps.php' );
 include( 'php/m2wp_faqs.php' );
 
@@ -23,7 +24,8 @@ class movetowordpress
 		
 		add_theme_support( 'post-formats' );
 		add_theme_support( 'post-thumbnails' );
-		
+
+		$this->switchers = new m2wp_switchers();		
 		$this->steps = new m2wp_steps();
 		$this->faqs = new m2wp_faqs();
 		

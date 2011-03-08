@@ -55,6 +55,29 @@
 			<div class="message info">There's no page with slug of 'why-wordpress' at the moment</div>
 			
 		<?php endif; ?>
+		
+		<?php
+			// Load the text content for the "What you'll need to do to move to WordPress"
+			$args = array(
+				'post_type' => 'm2wp_switcher',
+				'posts_per_page' => -1,
+			);
+			$switchers = new WP_Query( $args );
+		?>
+		
+		<h2>Who’s ‘moved to WordPress’ recently</h2>
+		
+		<?php if ( $switchers->have_posts() ) : ?>
+		
+		<?php while ( $switchers->have_posts() ) : $switchers->the_post(); ?>
+			
+			<?php // @todo display a gallery of featured images ?>
+		
+		<?php endwhile; else: ?>
+			
+			<div class="message info">There's no posts in the custom post type 'm2wp_switcher'</div>
+			
+		<?php endif; ?>
 			
 		<?php
 			// Load the text content for the "What you'll need to do to move to WordPress"
