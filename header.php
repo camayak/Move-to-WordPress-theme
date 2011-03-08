@@ -17,6 +17,15 @@
 	
 	<div class="wrap">
 		
+		<h1 class="site-title"><?php bloginfo('name'); ?></h1>
+		
+		<hr class="large" />
+		
+		<div class="site-description"><?php bloginfo('description'); ?></div>
+		
+		<hr class="small" />
+		
+		<div class="courtesy-of">Courtesy of <a href="http://camayak.com/"><span class="cyan">Ca</span><span class="magenta">ma</span><span class="yellow">ya</span><span class="black">k</span></a>, the multi-platform publishing product launching this fall</div>
 		
 	</div>
 	

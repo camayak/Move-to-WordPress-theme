@@ -13,7 +13,7 @@ body, html {
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-size: 12px;
 	line-height: 18px;
-	background-color: #EEEEEE;
+	color: #333333;
 }
 
 a {
@@ -28,15 +28,69 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.wrap {
-	margin-left: auto;
-	margin-right: auto;
+h1 {
+	font-size: 48px;
+}
+
+hr.large {
 	width: 500px;
 }
 
+hr.medium {
+	width: 400px;
+}
+
+hr.small {
+	width: 250px;
+}
+
+.wrap {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+
+/*
+.cyan {
+	color: #0066CC;
+}
+
+.magenta {
+	color: #FF6699;
+}
+
+.yellow {
+	color: #FFCC33;
+}
+
+.black {
+	color: #000000;
+}
+*/
+
 .header {
-	margin-top: 25px;
+	border-top: 5px solid #333333;
+	margin-top: 0px;
 	margin-bottom: 15px;
+	text-align: center;
+	background-color: #EEEEEE;	
+}
+
+.header h1.site-title {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.header div.site-description {
+	
+}
+
+.header div.courtesy-of {
+	
+}
+
+.header div.courtesy-of a {
+	font-weight: bold;
 }
 
 .main .wrap {
